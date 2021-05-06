@@ -1,20 +1,24 @@
-@import '../../styles/mixin.scss';
-@import '../../styles/variables.scss';
+@import '../../styles/mixin';
+@import '../../styles/variables';
+
 .Header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $white;
 
   @include box-shadow-sm;
+  align-items: center;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: calc(100% - 20px);
 
   &__hidden-text {
     @include visually-hidden;
   }
 
   &__logo-image {
-    height:35px;
-    padding:10px;
+    height: 35px;
+    padding: 10px;
     vertical-align: top;
   }
 }
