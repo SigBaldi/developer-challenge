@@ -28,15 +28,15 @@ We have placed a number of helpful todos inside the code (see `index.js` and `Ap
 - Use the returned data to display a page of works that matches the given design.
   - Prices should be displayed in euros.
 - Display tags based on the following rules.
-  - Given a Soldout tag is provided then the product should display a sold out tag.
-  - Given a Coming soon tag is provided and a soldout tag is not provided then the product should display a coming soon tag
-  - Given a availble tag is provided and no other tags are provided then the product should show no tag.
+  - Given a "Sold out" tag is provided then the product should display a sold out tag.
+  - Given a "Coming soon" tag is provided and a "Sold out" tag is not provided then the product should display a coming soon tag
+  - Given an "Available" tag is provided and no other tags are provided then the product should show no tag.
 
 
 
 ## Design
 
-We've provided a [design](./designs/listings.png) for small screens (480px). For this exersize **please don't worry about tackling larger breakpoints** . Please just make sure your solution looks good at 480px in portrait orientation.
+We've provided a [design](./designs/listings.png) for small screens (480px). For this exercise **please don't worry about tackling larger breakpoints** . Please just make sure your solution looks good at 480px in portrait orientation.
 
 We have provided some basic sass variables to help you get you started in [variables.scss](./src/styles/variables.scss).
 
@@ -64,11 +64,12 @@ The provided `works.json` which will return a collection of works:
 
 ## Running the project
 
-There are the following commands availble to run the project 
+There are the following commands available to run the project 
 
 * `npm start` - This will start the application for development
 * `npm run build` - Will create a production optimised build
 * `npm test` - Will run the front end tests
+* `npm lint` - Will run the linter and fix issues
 
 ## Submission Guide
 
