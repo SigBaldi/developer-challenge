@@ -8,9 +8,8 @@ exports[`App should render correctly 1`] = `
   <main
     className="App__main"
   >
-    <p>
-      Your turn good luck 👍 
-    </p>
+    Loading...
+    0
   </main>
 </div>
 `;
