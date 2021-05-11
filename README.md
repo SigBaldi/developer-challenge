@@ -12,7 +12,7 @@ The challenge has two parts:
 
 ----
 
-Your sollution will be evaluated on the following:
+Your solution will be evaluated on the following:
 
 * Your implementation works as described in the [task](#task).
 

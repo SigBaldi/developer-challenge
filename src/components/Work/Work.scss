@@ -1,0 +1,35 @@
+@import '../../styles/variables';
+
+.Work {
+  border: 1px solid $cloud;
+  box-sizing: content-box;
+  display: block;
+  flex: 1 0 auto;
+  height: 300px;
+  margin: 0 0 -1px -1px;
+  padding: 0 10px 20px;
+  text-decoration: none;
+  width: calc(50% - 22px);
+
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: inherit;
+  }
+
+  pre {
+    border: 1px solid $dark;
+    color: $dark;
+    float: right;
+    padding: 2px 10px;
+    vertical-align: middle;
+  }
+  
+  img {
+    height: 200px;
+    object-fit: contain;
+    width: 100%;
+  }
+}

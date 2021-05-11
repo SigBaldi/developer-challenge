@@ -1,0 +1,10 @@
+@import '../../styles/mixin';
+@import '../../styles/variables';
+
+.WorksList {
+  @include box-shadow-sm;
+  align-items: flex-start;
+  background-color: $white;
+  display: flex;
+  flex-flow: row wrap;
+}

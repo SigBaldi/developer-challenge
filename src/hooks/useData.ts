@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import fetch from '../services/fetch'
+import useSafeAsync from './useAsync';
 
 function useData(): {
   error: string;
@@ -9,14 +11,14 @@ function useData(): {
   const [works, setWorks] = useState([]);
   const [error, setError] = useState('');
 
+  const safeAsync = useSafeAsync();
+
   async function fetchData() {
     try {
-      const data = await fetch('works.json'); // Hardcoded, could be extracted as a variable to be passed as an argument.
-      const json = await data.json();
-
-      if (json) {
+      const { data } = await fetch('works.json'); // Hardcoded, could be extracted as a variable to be passed as an argument.
+      if (data) {
         setLoading(false);
-        setWorks(json.works);
+        setWorks(data.works);
       }
     } catch (error) {
       setLoading(false);
@@ -27,8 +29,8 @@ function useData(): {
   }
 
   useEffect(() => {
-    fetchData();
-  }, []);
+    safeAsync(fetchData());
+  }, [safeAsync]);
 
   return {
     error,

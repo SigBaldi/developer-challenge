@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render correctly 1`] = `
+<a
+  className="Work"
+  href="https://shop.avantarte.com/products/dummy"
+>
+  <pre>
+    Sold Out
+  </pre>
+  <img
+    alt="Artwork"
+    src="//cdn.shopify.com/s/files/1/0260/5524/5923/products/fightforadream_nav_8ecfb9fd-b156-4995-848a-6a5c84c9991a_500x.jpg?v=1617707578"
+  />
+  <h3>
+    Dummy
+  </h3>
+  <span
+    className="PriceTag"
+  >
+    €
+    7500
+  </span>
+</a>
+`;
